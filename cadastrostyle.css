@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#imgbackcadastro{
+    position: absolute;
+    object-fit: cover;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;    
+    background-color:transparent; 
+    backdrop-filter: blur(2px);
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.218) ;
+}
+
+header > nav {
+    margin: 7px;
+    margin-left: 10vh;
+    padding: 5px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    background-color: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(5px);   
+    position: relative;
+    letter-spacing: 0.2rem;
+}
+
+header > nav > a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+header > nav > a:hover::after{
+    width: 100%;
+}
+
+.menue{
+    margin-left: auto;
+}
+
+.menue > img{
+    margin: 10px;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.menue > img:hover{
+    scale: 1.1;
+    cursor: pointer;
+    transition: .3s;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgba(248, 246, 246, 0.093);
+    align-items: center;
+    margin: auto;
+    border-radius: 20px; 
+    backdrop-filter: blur(10px);
+}
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.caixascad > label{
+    letter-spacing: 0.3rem;
+    margin: 5px;
+}
+
+.caixascad > input {
+    border-radius: 20px;
+    width: 200px;
+    height: 22px;
+}
+
+.caixascad > input:focus{
+    scale: 1.1;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+
+}
+.botoes > button {
+    color: white;
+    margin: 15px;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    background-color: transparent;
+}
+
+.botoes > button:hover{
+    scale: 1.1;
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.252) ;
+    backdrop-filter: blur(55px);
+    transition: .5s;
+}
+
+.rodape{
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 0, 0, 0.296);
+    position: absolute;
+    text-align: right;
+    width: 99%;
+    height: min-content;
+    background-color:transparent;
+    bottom: 0;
+}
+
+.rodape > p > a {
+    text-decoration: none;
+    color: white;
+}
