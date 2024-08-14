@@ -97,10 +97,6 @@ body{
     
 }
 
-body > footer {
-    
-}
-
 #imgback{   
     position: absolute;
     object-fit: cover;
