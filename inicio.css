@@ -94,14 +94,33 @@ header > nav > a:hover::after{
 }
 
 .blocoesquerdo{
+
     background-color:transparent;
     backdrop-filter: blur(3px);
-    /* display: flex; */
+    display: flex;
     position: relative;
+    /* box-sizing: border-box; */
     border: 2px solid rgba(255, 255, 255, 0.059);
     width: 49vw;
     height: 60vh;
     /* border-radius: 20px 0px 0px 20px; */
+}
+
+.blocoesquerdo > section{
+    display: flex;
+    position: relative;
+    object-fit: cover;
+}
+
+.blocoesquerdo > section > img{
+    display: flex;
+    flex-grow: inherit;
+    position:relative;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    margin: 5px;
+
 }
 
 .blocodireito{

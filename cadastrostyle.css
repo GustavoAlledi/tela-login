@@ -137,7 +137,7 @@ main > section {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 0, 0, 0.296);
     position: absolute;
-    text-align: right;
+    text-align: center;
     width: 99%;
     height: min-content;
     background-color:transparent;
