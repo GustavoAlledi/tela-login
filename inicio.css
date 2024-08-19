@@ -89,8 +89,9 @@ header > nav > a:hover::after{
 
 #mainprincipal{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     position: relative;
+    object-fit: cover;
 }
 
 .blocoesquerdo{
@@ -113,10 +114,10 @@ header > nav > a:hover::after{
 }
 
 .blocoesquerdo > section > img{
-    display: flex;
-    flex-grow: inherit;
-    position:relative;
-    object-fit: cover;
+    /* display: flex; */
+    /* flex-grow: inherit; */
+    /* position:relative; */
+    /* object-fit: cover; */
     height: 150px;
     width: 150px;
     margin: 5px;
